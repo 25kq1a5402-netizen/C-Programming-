@@ -1,0 +1,14 @@
+#include<stdio.h>
+void main()
+{
+char gender;
+scanf("%d",&gender);
+if(gender=='b')
+{
+printf("Boy");
+}
+else
+{
+printf("Girl");
+}
+}
