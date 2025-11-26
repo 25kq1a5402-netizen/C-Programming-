@@ -5,7 +5,7 @@ void main()
     scanf("%d%d",&lower,&upper);
     if(lower<=upper)
     {
-        while(lower<upper);
+        while(lower<upper)
     {
     printf("%d",lower);
     lower++;
