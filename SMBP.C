@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
-    // Menu items (you can extend this list)
-    const char *items[] = {
+int main() 
+{
+      const char *items[] = {
         "Amul Chs",
         "Five Star Chs",
         "Cock",
@@ -15,26 +15,26 @@ int main() {
 
     int choice, qty;
     char cont = 'Y';
-    int quantities[n];               // store quantity per item
-    memset(quantities, 0, sizeof(quantities));
-
+    int quantities[n];          
     printf("=== Super Market Billing ===");
-    // Show menu
-    for (int i = 0; i < n; ++i) {
+    for (int i = 0; i < n; ++i) 
+{
+
         printf("\n%d. %s Rs.%d", i + 1, items[i], price[i]);
     }
     printf("\n");
-
-    // Loop to add items
-    while (cont == 'Y' || cont == 'y') {
+        while (cont == 'Y' || cont == 'y') 
+{
         printf("\nEnter your Item number and Quantity: ");
-        if (scanf("%d %d", &choice, &qty) != 2) {
+        if (scanf("%d %d", &choice, &qty) != 2) 
+{
             printf("Invalid input. Try again.\n");
-            while (getchar() != '\n'); // clear bad input
-            continue;
+            while (getchar() != '\n');
         }
 
-        if (choice < 1 || choice > n) {
+        if (choice < 1 || choice > n) 
+
+{
             printf("Item number out of range.\n");
             continue;
         }
@@ -44,13 +44,13 @@ int main() {
 
         printf("Do you want to continue (Y/N)? ");
         scanf(" %c", &cont);
-    }
-
-    // Print the bill
-    printf("\n=== Your Bill ===");
-    int total = 0;
-    for (int i = 0; i < n; ++i) {
-        if (quantities[i] > 0) {
+}
+        printf("\n=== Your Bill ===");
+        int total = 0;
+        for (int i = 0; i < n; ++i) 
+{
+        if (quantities[i] > 0) 
+{
             int sub = quantities[i] * price[i];
             total += sub;
             printf("\n%d. %s Rs.%d x %d = Rs.%d",
