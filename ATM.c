@@ -39,7 +39,8 @@ int main()
             }
         } 
         else if (choice == 3) 
-        {   
+        {  
+            float withdrawAmount;
             printf("\nEnter the amount to withdraw: Rs.");
             scanf("%f", &withdrawAmount);
 
